@@ -1,0 +1,28 @@
+ 
+katello:
+    server: https://foreman.rmatto.labs.com.py
+    username: admin
+    password: asdewq
+    api_url: /katello/api/v2/
+    ssl_verify: False
+
+data_files:
+    errata_files: ./data/errata.latest.xml
+    oval_files: ./data/com.redhat.rhsa-all.xml
+
+redis:
+    server: 127.0.0.1
+    port: 6379
+
+repositories:
+        OS_x86_64:
+                pulp_id: 958a0906-a331-466c-9930-bb9600b6dd25
+                os_release: 7
+
+        Extras_OS_x86_64:
+                pulp_id: d1b4d965-0b06-476b-b0b3-e220b52650c1
+                os_release: 7
+
+        Updates_OS_x86_64:
+                pulp_id: 956101be-9902-4811-bba4-379face97ed5
+                os_release: 7
