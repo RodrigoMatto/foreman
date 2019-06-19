@@ -1,0 +1,47 @@
+katello nicolas s github
+
+katello-pacage enavkw
+katello-enableracer
+
+
+
+
+
+## ERRATA CENTOS
+
+yum install pulp-admin-client pulp-rpm-admin-extensions redis python36 python36-pip -y 
+
+pip3 install lxml PyYAML pyaml redis requests
+
+
+mkdir ~/.pulp/
+chmod 0700 ~/.pulp/
+sudo cat /etc/pki/katello/certs/pulp-client.crt /etc/pki/katello/private/pulp-client.key > ~/.pulp/user-cert.pem
+chmod 400 ~/.pulp/user-cert.pem
+
+
+
+c16e4281-c75c-4677-a215-ff17065ac66a
+
+7d58c24a-1631-4eb9-9dcf-5aeb1b2a06e9    
+
+bde18aca-65bf-4df5-8c76-f6b8550a5a8e
+
+
+OS_x86_64:
+        pulp_id: 958a0906-a331-466c-9930-bb9600b6dd25
+        os_release: 7
+
+Extras_x86_64:
+        pulp_id: d1b4d965-0b06-476b-b0b3-e220b52650c1
+        os_release: 7
+
+Updates_x86_64:
+        pulp_id: 956101be-9902-4811-bba4-379face97ed5
+        os_release: 7
+
+        
+#errata to block
+
+CESA-2019:0420
+
