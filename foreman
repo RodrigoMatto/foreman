@@ -1,0 +1,7 @@
+Org, Loc, gpg, sync, prod, repo, env, cont, key
+
+yum -y install subscription-manager
+
+subscription-manager repos --list
+
+mv CentOS-* epel*  katello* /tmp/
